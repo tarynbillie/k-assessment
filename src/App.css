@@ -1,33 +1,140 @@
 .App {
+  font-family: 'Roboto';
+}
+
+.App #nav {
+  height: 5rem;
+  background-color: #b3c1b8;
+  -webkit-box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.15);
+}
+
+.App #nav h1 {
+  margin: 0;
+  padding: 1rem;
   text-align: center;
+  font-weight: normal;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App .main section {
+  padding-right: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App .main section .side-panel {
+  background-color: #fff5db;
+  padding: 0 2rem;
+  height: 200vh;
 }
+
+.App .main section .side-panel h2 {
+  padding-top: 1.4rem;
+  margin-top: 0;
+}
+
+.App .main section .side-panel .candidates-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-decoration: none;
+  color: black;
+}
+
+.App .main section .side-panel .candidates-container span {
+  font-size: 16px;
+  margin: 0.3rem 0;
+  display: block;
+  position: relative;
+  z-index: 1;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  cursor: pointer;
+}
+
+.App .main section .side-panel .candidates-container span:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #b3c1b8;
+  -webkit-transition: width .5s;
+  transition: width .5s;
+}
+
+.App .main section .side-panel .candidates-container span:hover:after {
+  width: 100%;
+}
+
+.App .main section .application-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 3rem 0;
+  width: 90%;
+  border-bottom: 1px solid lightgray;
+}
+
+.App .main section .application-details__video {
+  width: 60%;
+}
+
+.App .main section .application-details video {
+  width: 80%;
+}
+
+.App .main section .application-details .notes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 2rem;
+}
+
+.App .main section .application-details .notes h3 {
+  font-weight: normal;
+}
+
+.App .main section .application-details .notes textarea {
+  width: 400px;
+  height: 150px;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-size: 16px;
+  border-radius: 2px;
+  outline: none;
+  resize: none;
+}
+
+.App .main section .application-details .notes button {
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  background-color: #fff5db;
+  cursor: pointer;
+  width: 10rem;
+  height: 2.5rem;
+  -webkit-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
+}
+
+.App .main section .application-details .notes button:hover {
+  -webkit-box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.15);
+}
+/*# sourceMappingURL=App.css.map */
