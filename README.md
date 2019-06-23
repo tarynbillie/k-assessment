@@ -29,11 +29,9 @@ You will also see any lint errors in the console.
 
 ### Tech
 
-Dillinger uses a number of open source projects to work properly:
-
-* [ReactJS] - HTML enhanced for web apps!
-* [react-router-dom] - For dynamic, client-side routing, allows us to build a single-page web application with navigation without the page refreshing as the user navigates. React Router uses component structure to call components, which display the appropriate information.
-* [node-sass] - Sass is a stylesheet language that’s compiled to CSS. It allows you to use variables, nested rules, mixins, functions, and more, all with a fully CSS-compatible syntax. By using it I can keep large stylesheets well-organized and makes it easy to share design within and across projects.
+* ReactJS - HTML enhanced for web apps!
+* react-router-dom - For dynamic, client-side routing, allows us to build a single-page web application with navigation without the page refreshing as the user navigates. React Router uses component structure to call components, which display the appropriate information.
+* node-sass - Sass is a stylesheet language that’s compiled to CSS. It allows you to use variables, nested rules, mixins, functions, and more, all with a fully CSS-compatible syntax. By using it I can keep large stylesheets well-organized and makes it easy to share design within and across projects.
 
 
 ### Questions
